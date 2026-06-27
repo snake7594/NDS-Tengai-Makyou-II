@@ -42,18 +42,28 @@
 
 준비물: **깨끗한 천외마경II 卍MARU 일본판(ATMJ) 롬 파일**과 xdelta 패처.
 
-1. xdelta3([공식 배포](https://github.com/jmacd/xdelta)) 또는 GUI 패처(예: delta patcher)를 준비합니다.
-2. `dist/` 폴더의 `.xdelta` 패치를 깨끗한 원본 롬에 적용합니다.
+`dist/` 폴더의 `.xdelta` 패치를 깨끗한 원본 롬에 적용합니다. 이 패치는 **2차 압축 없이(no secondary compression)** 만들어 PC 패처와 안드로이드 **UniPatcher** 양쪽에서 그대로 동작합니다.
 
-명령줄 예시:
+### PC (xdelta3 / GUI 패처)
+
+xdelta3([공식 배포](https://github.com/jmacd/xdelta)) 명령줄:
 
 ```
-xdelta3 -d -s 원본_ATMJ.nds dist/tm2-korean.xdelta 출력_KR.nds
+xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai Makyou II - Manji Maru (Korean)_20260628.xdelta" 출력_KR.nds
 ```
 
-GUI 패처라면 원본 롬과 `.xdelta` 파일을 지정하고 Apply를 누르면 됩니다.
+GUI 패처(예: delta patcher, MultiPatch)라면 원본 롬과 `.xdelta` 파일을 지정하고 Apply를 누르면 됩니다.
 
-3. 결과 롬 크기가 **134,217,728 바이트(128 MiB)** 인지 확인한 뒤 에뮬레이터(멜론DS / DeSmuME)나 플래시카트에 올립니다.
+### 안드로이드 (UniPatcher)
+
+1. 원본 ATMJ 롬과 `dist/`의 `.xdelta` 파일을 기기에 복사합니다.
+2. UniPatcher에서 패치 파일(`.xdelta`)을 고른 뒤 원본 롬을 지정해 적용합니다.
+
+> 이 패치는 UniPatcher가 디코드하지 못하는 2차 압축(DJW/LZMA)을 사용하지 않으므로 바로 적용됩니다.
+
+### 적용 후
+
+결과 롬 크기가 **134,217,728 바이트(128 MiB)** 인지 확인한 뒤 에뮬레이터(멜론DS / DeSmuME)나 플래시카트/실기에 올립니다.
 
 > 패치는 반드시 **깨끗한 원본 일본판 롬**에 적용하세요. 이미 패치된 롬에 다시 적용하면 정상 동작하지 않습니다.
 
