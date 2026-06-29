@@ -49,7 +49,7 @@
 xdelta3([공식 배포](https://github.com/jmacd/xdelta)) 명령줄:
 
 ```
-xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai Makyou II - Manji Maru (Korean)_20260628.xdelta" 출력_KR.nds
+xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai Makyou II - Manji Maru (Korean)_20260629.xdelta" 출력_KR.nds
 ```
 
 GUI 패처(예: delta patcher, MultiPatch)라면 원본 롬과 `.xdelta` 파일을 지정하고 Apply를 누르면 됩니다.
