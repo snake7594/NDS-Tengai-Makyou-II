@@ -49,7 +49,7 @@
 xdelta3([공식 배포](https://github.com/jmacd/xdelta)) 명령줄:
 
 ```
-xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai Makyou II - Manji Maru (Korean)_v1.0.0.xdelta" 출력_KR.nds
+xdelta3 -d -s 원본_ATMJ.nds "dist/Tengai Makyou II - Manji Maru (Korean)_v1.1.xdelta" 출력_KR.nds
 ```
 
 GUI 패처(예: delta patcher, MultiPatch)라면 원본 롬과 `.xdelta` 파일을 지정하고 Apply를 누르면 됩니다.
@@ -195,3 +195,4 @@ python patch/banner_tool.py pad <인덱스> <목표너비>  # 본문 행 좌우 
 ## 면책
 
 이 프로젝트는 Red Company / Hudson Soft / Sting 및 권리자와 무관한 **비공식 팬 번역**이며, 어떠한 영리 목적도 없습니다. 패치는 사용자가 합법적으로 소유한 원본 롬에 적용하는 용도로만 제공됩니다. 게임 롬은 이 저장소에 포함되어 있지 않으며 배포하지 않습니다.
+
